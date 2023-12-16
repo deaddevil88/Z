@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+  body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(rgba(169, 169, 169, 0.9), rgba(128, 128, 128, 0.7));
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      margin-bottom: 100px;
+      background-color: #ff7200;
+      display: block;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+        background-color: #000000;
+    }
+
+    header:hover {
+      background: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.8));
+    }
+
+    nav a.active {
+      background-color: #000000;
+    }
+
+    #menu-icon {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      cursor: pointer;
+      z-index: 1001;
+      width: 30px;
+      height: 30px;
+      margin-bottom: 200px;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 60px;
+        background-color: #ff7200;
+        z-index: 999;
+      }
+
+      #menu-icon {
+        display: block;
+      }
+
+      header {
+        display: block;
+      }
+    }
+
+    .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+            width: 250px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #27ae60;
+            font-size: 16px;
+        }
+
+        .header {
+            background-color: #000000;
+            color: #808080;
+            padding: 10px;
+            text-align: center;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        .P{
+            color: #000000;
+        }
+
+        .P:hover{
+            color: #ff7200;
+        }
+
+        .P a{
+            color: #ff7200;
+        }
+        .P a:hover{
+            color: #000000;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="menu.png" alt="Menu" id="menu-icon">
+
+  <header>
+    <nav>
+      
+      <a href="about.html" style="margin-top: 100px">About</a>
+      <a href="main.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="customization.html">Customaization</a>
+    </nav>
+  </header>
+  
+<div class="header">
+    <h1>Product Page</h1>
+</div>
+
+  <div class="product-container">
+    <div class="product-card">
+        <img class="product-image" src="image1.jpg" alt="Product 1">
+        <div class="product-details">
+            <h2 class="product-title">Product 1</h2>
+            <p class="product-price">$19.99</p>
+            <p class="P">If you wanna buy click 
+                <a href="https://mail.google.com/mail/u/0/#inbox">HERE</a> And Email us In minecraftfarooki@gmail.com
+            </p>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img class="product-image" src="image2.jpg" alt="Product 2">
+        <div class="product-details">
+            <h2 class="product-title">Product 2</h2>
+            <p class="product-price">$24.99</p>
+            <p class="P">If you wanna buy click 
+                <a href="https://mail.google.com/mail/u/0/#inbox">HERE</a> And Email us In minecraftfarooki@gmail.com
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img class="product-image" src="image3.jpg" alt="Product 3">
+        <div class="product-details">
+            <h2 class="product-title">Product 3</h2>
+            <p class="product-price">$29.99</p>
+            <p class="P">If you wanna buy click 
+                <a href="https://mail.google.com/mail/u/0/#inbox">HERE</a> And Email us In minecraftfarooki@gmail.com
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img class="product-image" src="image4.jpg" alt="Product 4">
+        <div class="product-details">
+            <h2 class="product-title">Product 4</h2>
+            <p class="product-price">$39.99</p>
+            <p class="P">If you wanna buy click 
+                <a href="https://mail.google.com/mail/u/0/#inbox">HERE</a> And Email us In minecraftfarooki@gmail.com
+        </div>
+    </div>
+</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const menuIcon = document.getElementById('menu-icon');    
+          const header = document.querySelector('header');
+          const nav = document.querySelector('nav');
+    
+          menuIcon.addEventListener('click', function () {
+            header.style.display = 'block';
+            nav.style.display = 'flex';
+          });
+    
+          menuIcon.addEventListener('mouseleave', function () {
+            if (!header.matches(':hover')) {
+              header.style.display = 'none';
+              nav.style.display = 'none';
+            }
+          });
+    
+          header.addEventListener('mouseleave', function () {
+            if (!header.matches(':hover')) {
+              header.style.display = 'none';
+              nav.style.display = 'none';
+            }
+          });
+    
+          window.addEventListener('resize', function () {
+            if (window.innerWidth > 600) {
+              nav.style.display = 'flex';
+              header.style.display = 'block';
+            } else {
+              nav.style.display = 'none';
+              header.style.display = 'none';
+            }
+          });
+        });
+      </script>
+</body>
+</html>
